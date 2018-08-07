@@ -1,0 +1,58 @@
+/*Include padding and border in the element's total width and height:*/
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-image: url(../images/elephant.png);}
+#quiz{
+    font-family: 'Pathway Gothic One', sans-serif;
+    background:#ffcc33;
+    margin: 20px 140px;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    padding-top: 25px;
+    border: double 3px;
+}
+#timer{
+    font-family: 'Pathway Gothic One', sans-serif;
+    border: double 3px;
+    width: 40%;
+    margin:0px auto;
+    font-size: 30px;
+
+}
+#afterSubmit{
+    visibility: hidden;
+}
+#submit-button{
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding-top: 5%;
+}
+
+#intro, #results{
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    padding-top: 25%;
+}
+#start-button{
+font-family: 'Pathway Gothic One', sans-serif;
+padding-top: 5%;
+
+}
+h1{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 60px;
+    color: green;
+}
+.myIcon{
+    font-size: 50px;
+    color: black;
+}
+p1, p{
+font-size: 25px;
+padding: 5px;
+}
+#multiple-choice{
+    padding: 5px;
+}

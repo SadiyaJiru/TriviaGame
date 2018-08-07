@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">                                                                                                         
+     <!--Bootstrap links-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <form id="quiz" name="quiz">
+        <br>
+        <div id="timer"></div>
+        <br>
+        <br>
+        <p>How many countries are in Africa? </p>
+        <input type="radio" id="multiple-choice" name="question1" value="54">54
+        <input type="radio" id="multiple-choice" name="question1" value="61">61
+        <input type="radio" id="multiple-choice" name="question1" value="46">46
+        <input type="radio" id="multiple-choice" name="question1" value="49">49
+        <br>
+        <br>
+        <p>What is the capital of Ethiopia? </p>
+        <input type="radio" id="multiple-choice" name="question2" value="Mombasa">Mombasa
+        <input type="radio" id="multiple-choice" name="question2" value="Cairo">Cairo
+        <input type="radio" id="multiple-choice" name="question2" value="Abuja">Abuja 
+        <input type="radio" id="multiple-choice" name="question2" value="Addis Ababa">Addis Ababa
+        <br>
+        <br>
+        <p>Which East African country lies on the equator</p>
+        <input type="radio" id="multiple-choice" name="question3" value="Kenya">Kenya
+        <input type="radio" id="multiple-choice" name="question3" value="Djibouti">Djibouti
+        <input type="radio" id="multiple-choice" name="question3" value="Somalia">Somalia
+        <input type="radio" id="multiple-choice" name="question3" value="Ethiopia">Ethiopia
+        <br>
+        <br>
+        <p>Africa has four of five fastest land animals, which one is the fastest?</p>
+        <input type="radio" id="multiple-choice" name="question4" value="Thompson’s gazelle">Thompson’s gazelle
+        <input type="radio" id="multiple-choice" name="question4" value="Cheetah">Cheetah
+        <input type="radio" id="multiple-choice" name="question4" value="Lion">Lion
+        <input type="radio" id="multiple-choice" name="question4" value="Wildebeest">Wildebeest
+        <br>
+        <br>
+        <p>Which is the most spoken language in Africa?</p>
+        <input type="radio" id="multiple-choice" name="question5" value="French">French
+        <input type="radio" id="multiple-choice" name="question5" value="English">English
+        <input type="radio" id="multiple-choice" name="question5" value="Swahili">Swahili
+        <input type="radio" id="multiple-choice" name="question5" value="Arabic">Arabic
+        <br>
+        <br>
+        <p>What precent of the worlds elephants are in Africa?</p>
+        <input type="radio" id="multiple-choice" name="question6" value="95%">95%
+        <input type="radio" id="multiple-choice" name="question6" value="85%">85%
+        <input type="radio" id="multiple-choice" name="question6" value="75%">75%
+        <input type="radio" id="multiple-choice" name="question6" value="70%">70%
+
+        <div id="submit-button">
+            <!--this button will call the on fuction when clicked-->
+        <!-- <input class="btn btn-primary submitBtn" type="submit" value="Submit" onClick="check();"> -->
+        <!-- <input class="btn btn-primary submitBtn" type="submit" value="Submit" onClick="check();">  -->
+
+        <a class="btn btn-primary start-button" href="resultPage.html" role="button" onClick="check();">submit</a>
+
+        </div>
+    
+    </form>
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
