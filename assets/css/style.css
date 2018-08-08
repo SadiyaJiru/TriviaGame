@@ -7,8 +7,8 @@ body{
 #quiz{
     font-family: 'Pathway Gothic One', sans-serif;
     background:#ffcc33;
-    margin: 20px 140px;
-    width: 500px;
+    margin: 10px 150px;
+    width: 540px;
     height: 600px;
     text-align: center;
     padding-top: 25px;
@@ -20,7 +20,6 @@ body{
     width: 40%;
     margin:0px auto;
     font-size: 30px;
-
 }
 #afterSubmit{
     visibility: hidden;
@@ -29,8 +28,7 @@ body{
     font-family: 'Pathway Gothic One', sans-serif;
     padding-top: 5%;
 }
-
-#intro, #results{
+#intro,{
     font-family: 'Pathway Gothic One', sans-serif;
     text-align: center;
     padding-top: 25%;
@@ -42,7 +40,7 @@ padding-top: 5%;
 }
 h1{
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     color: green;
 }
 .myIcon{
@@ -50,7 +48,7 @@ h1{
     color: black;
 }
 p1, p{
-font-size: 25px;
+font-size: 20px;
 padding: 5px;
 }
 #multiple-choice{

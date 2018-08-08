@@ -1,5 +1,7 @@
 var number = 60;
 var intervalId;
+var correct = 0;
+var incorrect = 0;
 function start() {
   clearInterval(intervalId);
   intervalId = setInterval(decrement, 1000); //1 second decroment
@@ -14,9 +16,8 @@ function decrement() {
     //  .. start the stop function.
     stop();
     //  Alert the user that time is up.
-    alert("Time Up!");
-    // alert("you got " + correct + " questions right" + " & you got " + incorrect + " questions wrong")
-    // check();
+    alert("Time Up! You got " + correct + " Questions Correct" + " And " + incorrect  + " Wrong");
+    
   }
 }
 //  The stop function
@@ -31,8 +32,9 @@ function stop() {
 start();
 
 function check() {
-  var correct = 0;
-  var incorrect = 0;
+  event.preventDefault();
+  correct = 0;
+  incorrect = 0;
 
   var question1 = document.quiz.question1.value;
   var question2 = document.quiz.question2.value;
@@ -73,31 +75,26 @@ function check() {
     incorrect++;
   }
 
-
-
-
-
-  alert(
-    "you got " +
-      correct +
-      " questions right" +
-      " & you got " +
-      incorrect +
-      " questions wrong"
-  );
+  // alert(
+  //   "you got " +
+  //     correct +
+  //     " questions right" +
+  //     " & you got " +
+  //     incorrect +
+  //     " questions wrong"
+  // );
 
   $("#afterSubmit").attr("style", "visibility: visible");
-  $("#correctNum").html("you got " + correct + " questions right");
-  $("#incorrectNum").html("you got " + incorrect + " questions wrong");
+  $("#quiz").html("Result: <br><br>"+"You got " + correct + " questions right! <br><br>"
+   + "And "+incorrect + " questions wrong! <br><br>" + "Refresh to play again!"  );
 
 
+  // $("#quiz").htnls("you got " + incorrect + " questions wrong");
   stop();
   clearInterval(intervalId);
 }
-// $("#button").click(function() {
-// // //   $(this).data("clicked", true);
-// //   $("#timer").attr("style", "visibility: hide");
 
-//   stop();
-//   clearInterval(intervalId);
-// });
+$('.submitBtn').click(check);
+
+
+
