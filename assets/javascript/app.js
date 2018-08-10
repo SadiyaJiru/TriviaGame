@@ -19,7 +19,7 @@ function decrement() {
     //  Alert the user that time is up.
     // alert("Time Up's! You got " + correct + " Questions Correct" + " And " + incorrect  + " Wrong");
     $("#quiz").html("YOUR TIME IS UP &#10071&#10071 <br><br>"+"Correct  &#9989;   " + correct + " <br><br>"
-    + "Incorrect &#10060;  "+incorrect + " <br><br>" + "Refresh to play again!",  href,'index.html',  );
+    + "Incorrect &#10060;  "+incorrect + " <br><br>" + "Refresh to play again!");
     $("#quiz").css({"font-size": "50px"});
   }
 } 
