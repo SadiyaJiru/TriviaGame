@@ -9,23 +9,23 @@ function start() {
 function decrement() {
   number--;
   //  Show the number in the #timer tag.
-  $("#timer").html("<h2> Seconds Left: " + number + "</h2>");
+  $("#timer").html("<h2> Seconds Left &#10071 " + number + "</h2>");
 
   //  Once number hits zero...
   if (number === 0) {
-    //  .. start the stop function.
+
+    //stops the timer.
     stop();
     //  Alert the user that time is up.
-    alert("Time Up! You got " + correct + " Questions Correct" + " And " + incorrect  + " Wrong");
-    
+    // alert("Time Up's! You got " + correct + " Questions Correct" + " And " + incorrect  + " Wrong");
+    $("#quiz").html("YOUR TIME IS UP &#10071&#10071 <br><br>"+"Correct  &#9989;   " + correct + " <br><br>"
+    + "Incorrect &#10060;  "+incorrect + " <br><br>" + "Refresh to play again!",  href,'index.html',  );
+    $("#quiz").css({"font-size": "50px"});
   }
-}
-//  The stop function
+} 
 function stop() {
-  // alert("Times UP! you got " + correct + " questions right" + " & you got " + incorrect + " questions wrong")
-  //  Clears our intervalId
-  //  We just pass the name of the interval
-  //  to the clearInterval function.
+  
+  //  We just pass the name of the interval to the clearInterval function.
   clearInterval(intervalId);
 }
 //  Execute the start function.
@@ -83,10 +83,14 @@ function check() {
   //     incorrect +
   //     " questions wrong"
   // );
+ 
 
   $("#afterSubmit").attr("style", "visibility: visible");
-  $("#quiz").html("Result: <br><br>"+"You got " + correct + " questions right! <br><br>"
-   + "And "+incorrect + " questions wrong! <br><br>" + "Refresh to play again!"  );
+  $("#quiz").html("Results &#9997 <br><br>"+"Correct  &#9989;   " + correct + "<br><br>"
+   + "Incorrect &#10060; "+ incorrect + "<br><br>" + "Refresh to play again!"  );
+   $("#quiz").css({"font-size": "50px"});
+   
+
 
 
   // $("#quiz").htnls("you got " + incorrect + " questions wrong");

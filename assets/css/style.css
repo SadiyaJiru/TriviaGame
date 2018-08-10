@@ -15,12 +15,11 @@ body{
     border: double 3px;
 }
 #timer{
-    background: #ff471a;
     font-family: 'Pathway Gothic One', sans-serif;
-    border: double 3px;
-    width: 40%;
+    border: solid 4px red;
+    width: 50%;
     margin:0px auto;
-    font-size: 30px;
+    font-size: 40px;
 }
 #afterSubmit{
     visibility: hidden;
@@ -41,7 +40,7 @@ padding-top: 5%;
 }
 h1{
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 45px;
+    font-size: 70px;
     color: green;
 }
 .myIcon{
@@ -52,6 +51,8 @@ p1, p{
 font-size: 20px;
 padding: 5px;
 }
-#multiple-choice{
-    padding: 5px;
-}
+ul{
+    font-size: 20px;}
+    value{
+        padding: 20px;
+    }
